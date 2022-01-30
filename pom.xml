@@ -4,11 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>activiti-base</module>
+        <module>activiti-db</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.3</version>
+        <version>2.3.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.tbs</groupId>
@@ -18,12 +19,17 @@
     <description>springboot-activiti7-demo</description>
     <properties>
         <java.version>1.8</java.version>
+        <mybatis-plus.version>3.5.1</mybatis-plus.version>
     </properties>
 
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
