@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+
+
+  # 打开activiti历史功能
+  activiti:
+    history-level: full
+    db-history-used: true

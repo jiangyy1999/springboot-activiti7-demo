@@ -14,21 +14,33 @@
     </parent>
     <groupId>com.tbs</groupId>
     <artifactId>springboot-activiti7-demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>springboot-activiti7-demo</name>
     <description>springboot-activiti7-demo</description>
     <properties>
         <java.version>1.8</java.version>
+        <this.version>1.0.0-SNAPSHOT</this.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
+        <activiti.version>7.1.0.M6</activiti.version>
     </properties>
 
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>com.tbs</groupId>
+                <artifactId>activiti-db</artifactId>
+                <version>${this.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.activiti</groupId>
+                <artifactId>activiti-spring-boot-starter</artifactId>
+                <version>${activiti.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
