@@ -4,7 +4,7 @@
     <startEvent id="sid-12ac2ff2-2255-4c07-bfb4-bfad9d5d507f"/>
     <exclusiveGateway id="sid-e5f82694-4932-4888-ab80-5d963ecd4893"/>
     <userTask id="sid-19ae10af-bd7e-4bc2-816c-eac14a2307b2" name="time大于3的审批流程" activiti:assignee="a用户"/>
-    <userTask id="sid-4e3b87ff-7826-4ff1-83a4-4bd024340f05" name="time小于等于3的审批流程"/>
+    <userTask id="sid-4e3b87ff-7826-4ff1-83a4-4bd024340f05" name="time小于等于3的审批流程" activiti:assignee="b用户"/>
     <sequenceFlow id="sid-77af5df9-2a0c-4f0d-8b21-94842f4b0daf" sourceRef="sid-12ac2ff2-2255-4c07-bfb4-bfad9d5d507f" targetRef="sid-e5f82694-4932-4888-ab80-5d963ecd4893"/>
     <sequenceFlow id="sid-cc9a4edf-9f99-4501-9cc9-010ab2954e09" sourceRef="sid-e5f82694-4932-4888-ab80-5d963ecd4893" targetRef="sid-19ae10af-bd7e-4bc2-816c-eac14a2307b2">
       <conditionExpression xsi:type="tFormalExpression">${time&gt;3}</conditionExpression>
